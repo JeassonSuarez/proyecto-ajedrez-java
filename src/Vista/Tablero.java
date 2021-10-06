@@ -148,39 +148,39 @@ public class Tablero extends javax.swing.JFrame implements Serializable, ActionL
         
         
         Etiqueta uno = (Etiqueta)admin.obtenerProto("etiqueta");
-        uno.setText("1");
+        uno.setText("8");
         Etiqueta dos = (Etiqueta)admin.obtenerProto("etiqueta");
-        dos.setText("2");
+        dos.setText("7");
         Etiqueta tres = (Etiqueta)admin.obtenerProto("etiqueta");
-        tres.setText("3");
+        tres.setText("6");
         Etiqueta cuatro = (Etiqueta)admin.obtenerProto("etiqueta");
-        cuatro.setText("4");
+        cuatro.setText("5");
         Etiqueta cinco = (Etiqueta)admin.obtenerProto("etiqueta");
-        cinco.setText("5");
+        cinco.setText("4");
         Etiqueta seis = (Etiqueta)admin.obtenerProto("etiqueta");
-        seis.setText("6");
+        seis.setText("3");
         Etiqueta siete = (Etiqueta)admin.obtenerProto("etiqueta");
-        siete.setText("7");
+        siete.setText("2");
         Etiqueta ocho = (Etiqueta)admin.obtenerProto("etiqueta");
-        ocho.setText("8");
+        ocho.setText("1");
         
         
         Etiqueta unouno = (Etiqueta)admin.obtenerProto("etiqueta");
-        unouno.setText("1");
+        unouno.setText("8");
         Etiqueta dosdos = (Etiqueta)admin.obtenerProto("etiqueta");
-        dosdos.setText("2");
+        dosdos.setText("7");
         Etiqueta trestres = (Etiqueta)admin.obtenerProto("etiqueta");
-        trestres.setText("3");
+        trestres.setText("6");
         Etiqueta cuatrocuatro = (Etiqueta)admin.obtenerProto("etiqueta");
-        cuatrocuatro.setText("4");
+        cuatrocuatro.setText("5");
         Etiqueta cincocinco = (Etiqueta)admin.obtenerProto("etiqueta");
-        cincocinco.setText("5");
+        cincocinco.setText("4");
         Etiqueta seisseis = (Etiqueta)admin.obtenerProto("etiqueta");
-        seisseis.setText("6");
+        seisseis.setText("3");
         Etiqueta sietesiete = (Etiqueta)admin.obtenerProto("etiqueta");
-        sietesiete.setText("7");
+        sietesiete.setText("2");
         Etiqueta ochoocho = (Etiqueta)admin.obtenerProto("etiqueta");
-        ochoocho.setText("8");
+        ochoocho.setText("1");
         
         sup.add(nula1);
         sup.add(a);
@@ -279,50 +279,256 @@ public class Tablero extends javax.swing.JFrame implements Serializable, ActionL
     }
     
     public void inicioFichas(){
-       /* Ficha rey1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha dama1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha alfilP1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha alfilS1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha caballoP1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha caballoS1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha torreP1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha torreS1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonUno1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonDos1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonTres1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonCuatro1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonCinco1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonSeis1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonSiete1 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonOcho1 = (Ficha)admin.obtenerProto("ficha");
-        
-        
-        Ficha rey2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha dama2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha alfilP2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha alfilS2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha caballoP2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha caballoS2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha torreP2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha torreS2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonUno2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonDos2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonTres2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonCuatro2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonCinco2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonSeis2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonSiete2 = (Ficha)admin.obtenerProto("ficha");
-        Ficha peonOcho2 = (Ficha)admin.obtenerProto("ficha");*/
-        
-        
+      
         cuadricula[0][4].setNombre("REY 1");
-        cuadricula[0][4].setpX(0);
+        cuadricula[0][4].setpX(4);
         cuadricula[0][4].setpY(0);
         cuadricula[0][4].setEquipo(1);
         cuadricula[0][4].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
-        ImageIcon fot = new ImageIcon("src\\Imagenes\\Equipo 1\\rey 1.png");
-        Icon icono = new ImageIcon(fot.getImage().getScaledInstance(cuadricula[0][4].getWidth(), cuadricula[0][4].getHeight(), Image.SCALE_DEFAULT));
-        cuadricula[0][4].setIcon(icono);
+        ImageIcon rey1 = new ImageIcon("src\\Imagenes\\Equipo 1\\rey 1.png");
+        Icon iconoRey1 = new ImageIcon(rey1.getImage().getScaledInstance(cuadricula[0][4].getWidth(), cuadricula[0][4].getHeight(), Image.SCALE_DEFAULT));
+        cuadricula[0][4].setIcon(iconoRey1);
+        
+        cuadricula[0][3].setNombre("Dama 1");
+        cuadricula[0][3].setpX(3);
+        cuadricula[0][3].setpY(0);
+        cuadricula[0][3].setEquipo(1);
+        cuadricula[0][3].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        ImageIcon dama1 = new ImageIcon("src\\Imagenes\\Equipo 1\\dama 1.png");
+        Icon iconoDama1 = new ImageIcon(dama1.getImage().getScaledInstance(cuadricula[0][3].getWidth(), cuadricula[0][3].getHeight(), Image.SCALE_DEFAULT));
+        cuadricula[0][3].setIcon(iconoDama1);
+        
+        cuadricula[0][2].setNombre("AlfilI 1");
+        cuadricula[0][2].setpX(2);
+        cuadricula[0][2].setpY(0);
+        cuadricula[0][2].setEquipo(1);
+        cuadricula[0][2].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        ImageIcon alfil1 = new ImageIcon("src\\Imagenes\\Equipo 1\\alfil 1.png");
+        Icon iconoalfil1 = new ImageIcon(alfil1.getImage().getScaledInstance(cuadricula[0][2].getWidth(), cuadricula[0][2].getHeight(), Image.SCALE_DEFAULT));
+        cuadricula[0][2].setIcon(iconoalfil1);
+        
+        cuadricula[0][5].setNombre("AlfilD 1");
+        cuadricula[0][5].setpX(5);
+        cuadricula[0][5].setpY(0);
+        cuadricula[0][5].setEquipo(1);
+        cuadricula[0][5].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[0][5].setIcon(iconoalfil1);
+        
+        cuadricula[0][1].setNombre("CaballoI 1");
+        cuadricula[0][1].setpX(1);
+        cuadricula[0][1].setpY(0);
+        cuadricula[0][1].setEquipo(1);
+        cuadricula[0][1].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        ImageIcon caballo1 = new ImageIcon("src\\Imagenes\\Equipo 1\\caballo 1.png");
+        Icon iconoCaballo = new ImageIcon(caballo1.getImage().getScaledInstance(cuadricula[0][1].getWidth(), cuadricula[0][1].getHeight(), Image.SCALE_DEFAULT));
+        cuadricula[0][1].setIcon(iconoCaballo);
+        
+        cuadricula[0][6].setNombre("CaballoD 1");
+        cuadricula[0][6].setpX(6);
+        cuadricula[0][6].setpY(0);
+        cuadricula[0][6].setEquipo(1);
+        cuadricula[0][6].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[0][6].setIcon(iconoCaballo);
+        
+        cuadricula[0][0].setNombre("TorreI 1");
+        cuadricula[0][0].setpX(0);
+        cuadricula[0][0].setpY(0);
+        cuadricula[0][0].setEquipo(1);
+        cuadricula[0][0].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        ImageIcon torre1 = new ImageIcon("src\\Imagenes\\Equipo 1\\torre 1.png");
+        Icon iconoTorre1 = new ImageIcon(torre1.getImage().getScaledInstance(cuadricula[0][0].getWidth(), cuadricula[0][0].getHeight(), Image.SCALE_DEFAULT));
+        cuadricula[0][0].setIcon(iconoTorre1);
+        
+        cuadricula[0][7].setNombre("TorreD 1");
+        cuadricula[0][7].setpX(7);
+        cuadricula[0][7].setpY(0);
+        cuadricula[0][7].setEquipo(1);
+        cuadricula[0][7].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[0][7].setIcon(iconoTorre1);
+        
+        cuadricula[1][0].setNombre("Peon 1");
+        cuadricula[1][0].setpX(0);
+        cuadricula[1][0].setpY(1);
+        cuadricula[1][0].setEquipo(1);
+        cuadricula[1][0].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        ImageIcon peon1 = new ImageIcon("src\\Imagenes\\Equipo 1\\peon 1.png");
+        Icon iconoPeon1 = new ImageIcon(peon1.getImage().getScaledInstance(cuadricula[1][0].getWidth(), cuadricula[1][0].getHeight(), Image.SCALE_DEFAULT));
+        cuadricula[1][0].setIcon(iconoPeon1);
+        
+        cuadricula[1][1].setNombre("Peon 1");
+        cuadricula[1][1].setpX(1);
+        cuadricula[1][1].setpY(1);
+        cuadricula[1][1].setEquipo(1);
+        cuadricula[1][1].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[1][1].setIcon(iconoPeon1);
+        
+        cuadricula[1][2].setNombre("Peon 1");
+        cuadricula[1][2].setpX(2);
+        cuadricula[1][2].setpY(1);
+        cuadricula[1][2].setEquipo(1);
+        cuadricula[1][2].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[1][2].setIcon(iconoPeon1);
+        
+        cuadricula[1][3].setNombre("Peon 1");
+        cuadricula[1][3].setpX(3);
+        cuadricula[1][3].setpY(1);
+        cuadricula[1][3].setEquipo(1);
+        cuadricula[1][3].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[1][3].setIcon(iconoPeon1);
+        
+        cuadricula[1][4].setNombre("Peon 1");
+        cuadricula[1][4].setpX(4);
+        cuadricula[1][4].setpY(1);
+        cuadricula[1][4].setEquipo(1);
+        cuadricula[1][4].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[1][4].setIcon(iconoPeon1);
+        
+        cuadricula[1][5].setNombre("Peon 1");
+        cuadricula[1][5].setpX(5);
+        cuadricula[1][5].setpY(1);
+        cuadricula[1][5].setEquipo(1);
+        cuadricula[1][5].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[1][5].setIcon(iconoPeon1);
+        
+        cuadricula[1][6].setNombre("Peon 1");
+        cuadricula[1][6].setpX(6);
+        cuadricula[1][6].setpY(1);
+        cuadricula[1][6].setEquipo(1);
+        cuadricula[1][6].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[1][6].setIcon(iconoPeon1);
+        
+        cuadricula[1][7].setNombre("Peon 1");
+        cuadricula[1][7].setpX(7);
+        cuadricula[1][7].setpY(1);
+        cuadricula[1][7].setEquipo(1);
+        cuadricula[1][7].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[1][7].setIcon(iconoPeon1);
+        
+        
+        cuadricula[7][4].setNombre("REY 2");
+        cuadricula[7][4].setpX(4);
+        cuadricula[7][4].setpY(7);
+        cuadricula[7][4].setEquipo(2);
+        cuadricula[7][4].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        ImageIcon rey2 = new ImageIcon("src\\Imagenes\\Equipo 2\\rey 2.png");
+        Icon iconoRey2 = new ImageIcon(rey2.getImage().getScaledInstance(cuadricula[7][4].getWidth(), cuadricula[7][4].getHeight(), Image.SCALE_DEFAULT));
+        cuadricula[7][4].setIcon(iconoRey2);
+        
+        cuadricula[7][3].setNombre("Dama 2");
+        cuadricula[7][3].setpX(3);
+        cuadricula[7][3].setpY(7);
+        cuadricula[7][3].setEquipo(2);
+        cuadricula[7][3].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        ImageIcon dama2 = new ImageIcon("src\\Imagenes\\Equipo 2\\dama 2.png");
+        Icon iconoDama2 = new ImageIcon(dama2.getImage().getScaledInstance(cuadricula[7][3].getWidth(), cuadricula[7][3].getHeight(), Image.SCALE_DEFAULT));
+        cuadricula[7][3].setIcon(iconoDama2);
+        
+        cuadricula[7][2].setNombre("AlfilI 2");
+        cuadricula[7][2].setpX(2);
+        cuadricula[7][2].setpY(7);
+        cuadricula[7][2].setEquipo(2);
+        cuadricula[7][2].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        ImageIcon alfil2 = new ImageIcon("src\\Imagenes\\Equipo 2\\alfil 2.png");
+        Icon iconoalfil2 = new ImageIcon(alfil2.getImage().getScaledInstance(cuadricula[7][2].getWidth(), cuadricula[7][2].getHeight(), Image.SCALE_DEFAULT));
+        cuadricula[7][2].setIcon(iconoalfil2);
+        
+        cuadricula[7][5].setNombre("AlfilD 2");
+        cuadricula[7][5].setpX(5);
+        cuadricula[7][5].setpY(7);
+        cuadricula[7][5].setEquipo(2);
+        cuadricula[7][5].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[7][5].setIcon(iconoalfil2);
+        
+        cuadricula[7][1].setNombre("CaballoI 2");
+        cuadricula[7][1].setpX(1);
+        cuadricula[7][1].setpY(7);
+        cuadricula[7][1].setEquipo(2);
+        cuadricula[7][1].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        ImageIcon caballo2 = new ImageIcon("src\\Imagenes\\Equipo 2\\caballo 2.png");
+        Icon iconoCaballo2 = new ImageIcon(caballo2.getImage().getScaledInstance(cuadricula[7][1].getWidth(), cuadricula[7][1].getHeight(), Image.SCALE_DEFAULT));
+        cuadricula[7][1].setIcon(iconoCaballo2);
+        
+        cuadricula[7][6].setNombre("CaballoD 2");
+        cuadricula[7][6].setpX(6);
+        cuadricula[7][6].setpY(7);
+        cuadricula[7][6].setEquipo(2);
+        cuadricula[7][6].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[7][6].setIcon(iconoCaballo2);
+        
+        cuadricula[7][0].setNombre("TorreI 2");
+        cuadricula[7][0].setpX(0);
+        cuadricula[7][0].setpY(7);
+        cuadricula[7][0].setEquipo(2);
+        cuadricula[7][0].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        ImageIcon torre2 = new ImageIcon("src\\Imagenes\\Equipo 2\\torre 2.png");
+        Icon iconoTorre2 = new ImageIcon(torre2.getImage().getScaledInstance(cuadricula[7][0].getWidth(), cuadricula[7][0].getHeight(), Image.SCALE_DEFAULT));
+        cuadricula[7][0].setIcon(iconoTorre2);
+        
+        cuadricula[7][7].setNombre("TorreD 2");
+        cuadricula[7][7].setpX(7);
+        cuadricula[7][7].setpY(7);
+        cuadricula[7][7].setEquipo(2);
+        cuadricula[7][7].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[7][7].setIcon(iconoTorre2);
+        
+        cuadricula[6][0].setNombre("Peon 2");
+        cuadricula[6][0].setpX(0);
+        cuadricula[6][0].setpY(6);
+        cuadricula[6][0].setEquipo(2);
+        cuadricula[6][0].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        ImageIcon peon2 = new ImageIcon("src\\Imagenes\\Equipo 2\\peon 2.png");
+        Icon iconoPeon2 = new ImageIcon(peon2.getImage().getScaledInstance(cuadricula[6][0].getWidth(), cuadricula[6][0].getHeight(), Image.SCALE_DEFAULT));
+        cuadricula[6][0].setIcon(iconoPeon2);
+        
+        cuadricula[6][1].setNombre("Peon 2");
+        cuadricula[6][1].setpX(1);
+        cuadricula[6][1].setpY(6);
+        cuadricula[6][1].setEquipo(2);
+        cuadricula[6][1].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[6][1].setIcon(iconoPeon2);
+        
+        cuadricula[6][2].setNombre("Peon 2");
+        cuadricula[6][2].setpX(2);
+        cuadricula[6][2].setpY(6);
+        cuadricula[6][2].setEquipo(2);
+        cuadricula[6][2].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[6][2].setIcon(iconoPeon2);
+        
+        cuadricula[6][3].setNombre("Peon 2");
+        cuadricula[6][3].setpX(3);
+        cuadricula[6][3].setpY(6);
+        cuadricula[6][3].setEquipo(2);
+        cuadricula[6][3].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[6][3].setIcon(iconoPeon2);
+        
+        cuadricula[6][4].setNombre("Peon 2");
+        cuadricula[6][4].setpX(4);
+        cuadricula[6][4].setpY(6);
+        cuadricula[6][4].setEquipo(2);
+        cuadricula[6][4].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[6][4].setIcon(iconoPeon2);
+        
+        cuadricula[6][5].setNombre("Peon 2");
+        cuadricula[6][5].setpX(5);
+        cuadricula[6][5].setpY(6);
+        cuadricula[6][5].setEquipo(2);
+        cuadricula[6][5].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[6][5].setIcon(iconoPeon2);
+        
+        cuadricula[6][6].setNombre("Peon 2");
+        cuadricula[6][6].setpX(6);
+        cuadricula[6][6].setpY(6);
+        cuadricula[6][6].setEquipo(2);
+        cuadricula[6][6].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[6][6].setIcon(iconoPeon2);
+        
+        cuadricula[6][7].setNombre("Peon 2");
+        cuadricula[6][7].setpX(7);
+        cuadricula[6][7].setpY(6);
+        cuadricula[6][7].setEquipo(2);
+        cuadricula[6][7].setSize(cuadricula[0][0].getHeight(), cuadricula[0][0].getWidth());
+        cuadricula[6][7].setIcon(iconoPeon2);
+        
         
     }
     
